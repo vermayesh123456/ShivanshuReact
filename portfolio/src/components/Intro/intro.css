@@ -1,0 +1,127 @@
+
+.intro {
+    
+    --text-color-1: rgb(28, 240, 255);
+    --text-color-2: #fcb214;
+    
+}
+
+.intro{
+    height: calc(100vh - 5rem);
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative; 
+    padding: 0 8vh;
+ 
+}
+.bg{
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    object-fit:cover;
+    z-index: -1;
+}
+
+.intro-content{
+    height: 100vh;
+    width: 100vw;
+     padding: 2rem;
+     font-size: 3rem;
+     font-weight: 700;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     
+}
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100; 
+}
+
+.introname{
+    color: var(--text-color-2);
+}
+
+.intropara{
+    font-size: medium;
+    font-weight: 300;
+    width: 50rem;
+    line-height: 1.6rem;
+    flex-wrap: wrap;
+    
+
+    
+}
+
+.btn{
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 2rem;
+}
+
+.btnImg{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+    padding-right:0.8rem ;
+}
+
+@media screen and (max-width:840px){
+    .bg{
+        right: -10vw;
+        object-fit: none;
+       
+    }
+    .intro-content{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+    .intro{
+        padding: 0;
+       
+    }
+}
+
+@media screen and (max-width:450px){
+    .bg{
+        object-fit: none;
+        width: 200vw;
+       
+    }
+    .intro{
+        padding: 0;
+        width: 320vw;
+        max-width: 320vw;
+        height: 160vh;
+        
+    }
+    .introtext{
+        width: 100vw;
+    }
+    .intropara{
+        width: 90vw;
+    }
+   
+}
+@media screen and (max-width:600px){
+    .bg{
+        right: -30vw;
+        object-fit: none;
+    }
+    .intro{
+        padding: 0;
+        width: 700px;
+       
+    }
+   
+}
+
+
